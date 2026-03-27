@@ -1,0 +1,228 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "José Aguilar Canepa",
+      "email": "jcaguilar@dev.com",
+      "password": "pass123"
+    },
+    {
+      "id": "2",
+      "name": "Justino",
+      "email": "jramirez@uacam.mx",
+      "password": "password"
+    },
+    {
+      "id": "3",
+      "name": "Manuel",
+      "email": "gmanuel@uacam.mx",
+      "password": "gmanuel"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "space": "CIC-1",
+      "user": "José Aguilar Canepa",
+      "date": "2025-02-27",
+      "schedule": {
+        "start": "09:00",
+        "end": "11:00"
+      }
+    },
+    {
+      "id": "2",
+      "space": "CIC-2",
+      "user": "Justino Ramírez Ortegón",
+      "date": "2025-02-27",
+      "schedule": {
+        "start": "11:00",
+        "end": "13:00"
+      }
+    },
+    {
+      "space": "CIC-2",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-05",
+      "schedule": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "space": "CIC-2",
+      "user": "Justino Ramírez Ortegón",
+      "date": "2025-02-28",
+      "schedule": {
+        "start": "11:00",
+        "end": "13:00"
+      }
+    },
+    {
+      "id": "5",
+      "space": "CIC-1",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-01",
+      "schedule": {
+        "start": "09:00",
+        "end": "11:00"
+      }
+    },
+    {
+      "id": "6",
+      "space": "CIC-2",
+      "user": "Justino Ramírez Ortegón",
+      "date": "2025-03-01",
+      "schedule": {
+        "start": "11:00",
+        "end": "13:00"
+      }
+    },
+    {
+      "id": "7",
+      "space": "CIC-1",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-02",
+      "schedule": {
+        "start": "09:00",
+        "end": "11:00"
+      }
+    },
+    {
+      "id": "8",
+      "space": "CIC-2",
+      "user": "Justino Ramírez Ortegón",
+      "date": "2025-03-02",
+      "schedule": {
+        "start": "11:00",
+        "end": "13:00"
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "1",
+      "name": "CIC-1",
+      "description": "Sala 1 del CIC",
+      "capacity": 50,
+      "availability": {
+        "from": "09:00",
+        "to": "17:00"
+      }
+    },
+    {
+      "id": "2",
+      "name": "CIC-2",
+      "description": "Sala 2 del CIC",
+      "capacity": 45,
+      "availability": {
+        "from": "09:00",
+        "to": "17:00"
+      }
+    },
+    {
+      "id": "3",
+      "name": "CIC-3",
+      "description": "Sala 3 del CIC",
+      "capacity": 50,
+      "availability": {
+        "from": "09:00",
+        "to": "17:00"
+      }
+    },
+    {
+      "id": "4",
+      "name": "CIC-4",
+      "description": "Sala 4 del CIC",
+      "capacity": 60,
+      "availability": {
+        "from": "09:00",
+        "to": "17:00"
+      }
+    },
+    {
+      "id": "5",
+      "name": "ACT",
+      "description": "Sala de Actos",
+      "capacity": 100,
+      "availability": {
+        "from": "08:00",
+        "to": "17:00"
+      }
+    },
+    {
+      "id": "6",
+      "name": "DID",
+      "description": "Sala Didáctica",
+      "capacity": 50,
+      "availability": {
+        "from": "08:00",
+        "to": "17:00"
+      }
+    }
+  ],
+  "joseBookings": [
+    {
+      "id": "2",
+      "space": "CIC-1",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-04",
+      "schedule": {
+        "start": "10:00",
+        "end": "12:00"
+      }
+    },
+    {
+      "id": "3",
+      "space": "CIC-2",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-03",
+      "schedule": {
+        "start": "09:00",
+        "end": "11:00"
+      }
+    },
+    {
+      "id": "5",
+      "space": "CIC-2",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-04",
+      "schedule": {
+        "start": "15:00",
+        "end": "17:00"
+      }
+    },
+    {
+      "id": "6",
+      "space": "CIC-4",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-24",
+      "schedule": {
+        "start": "15:00",
+        "end": "17:00"
+      }
+    },
+    {
+      "id": "8",
+      "space": "CIC-1",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-04",
+      "schedule": {
+        "start": "08:00",
+        "end": "10:00"
+      }
+    },
+    {
+      "id": "9",
+      "space": "CIC-4",
+      "user": "José Aguilar Canepa",
+      "date": "2025-03-05",
+      "schedule": {
+        "start": "15:00",
+        "end": "17:00"
+      }
+    }
+  ]
+}
