@@ -89,18 +89,20 @@ Notas importantes:
 
 ## Configuración De Google Login
 
-Para usar el login con Google necesitas crear un OAuth Client ID en Google Cloud Console.
+Para usar el login con Google necesitas crear un OAuth Client ID en Google Cloud Console y colocarlo en `VITE_CLIENT_ID`.
 
 1. Entra a Google Cloud Console:
    <https://console.cloud.google.com/>
-2. Crea o selecciona un proyecto.
-3. Ve a `APIs & Services` -> `OAuth consent screen`.
-4. Configura la pantalla de consentimiento.
-5. Para desarrollo local puedes usar modo de prueba.
-6. Ve a `APIs & Services` -> `Credentials`.
-7. Selecciona `Create credentials` -> `OAuth client ID`.
-8. En `Application type`, selecciona `Web application`.
-9. En `Authorized JavaScript origins`, agrega:
+2. En la barra superior, crea un proyecto nuevo o selecciona el proyecto donde vivirá la app.
+3. Abre el menú lateral y entra a `APIs & Services` -> `OAuth consent screen`.
+4. Elige el tipo de usuario que corresponda. Para pruebas locales normalmente basta usar modo de prueba.
+5. Completa los datos obligatorios de la pantalla de consentimiento: nombre de la app, correo de soporte y correo del desarrollador.
+6. Guarda los cambios hasta terminar el asistente. No necesitas agregar scopes especiales para este login básico.
+7. Ve a `APIs & Services` -> `Credentials`.
+8. Selecciona `Create credentials` -> `OAuth client ID`.
+9. En `Application type`, selecciona `Web application`.
+10. En `Name`, escribe un nombre reconocible, por ejemplo `Booking Frontend Local`.
+11. En `Authorized JavaScript origins`, agrega:
 
 ```text
 http://localhost:3000
@@ -112,7 +114,9 @@ Si cambias el puerto de Vite, agrega también ese origen. Ejemplo:
 http://localhost:3001
 ```
 
-10. Copia el `Client ID` generado y colócalo en `VITE_CLIENT_ID`.
+12. No es necesario agregar `Authorized redirect URIs` para el botón de Google usado por este frontend.
+13. Haz clic en `Create`.
+14. Copia el `Client ID` generado y colócalo en `VITE_CLIENT_ID` dentro de `.env`.
 
 El Client ID normalmente tiene este formato:
 
@@ -173,20 +177,6 @@ Compilar para producción:
 npm run build
 ```
 
-Previsualizar la compilación:
-
-```bash
-npm run preview
-```
-
-Levantar datos locales con json-server:
-
-```bash
-npm run server
-```
-
-El servidor de datos locales usa `src/db.json` y el puerto `5000`.
-
 ## Conexión Con El Backend
 
 Todas las peticiones pasan por `src/utils/api.js`.
@@ -237,6 +227,8 @@ Rutas de administrador:
 - `/admin/history`
 - `/admin/spaces`
 - `/admin/register`
+- `/admin/binnacle`
+- `/admin/seed-bookings`
 
 Rutas de usuario:
 

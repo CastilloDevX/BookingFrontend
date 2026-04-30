@@ -6,6 +6,8 @@ const AdminBookings = () => import("@/views/admin/AdminBookings.vue");
 const AdminSpaces = () => import("@/views/admin/AdminSpaces.vue");
 const AdminHistory = () => import("@/views/admin/AdminHistory.vue");
 const AdminRegister = () => import("@/views/admin/AdminRegister.vue");
+const AdminBinnacle = () => import("@/views/admin/AdminBinnacle.vue");
+const AdminSeedBookings = () => import("@/views/admin/AdminSeedBookings.vue");
 const UserBookings = () => import("@/views/user/UserBookings.vue");
 const UserBook = () => import("@/views/user/UserBook.vue");
 const UserArchive = () => import("@/views/user/UserArchive.vue");
@@ -48,6 +50,18 @@ const router = createRouter({
             path: '/admin/register',
             name: 'admin-register',
             component: AdminRegister,
+            meta: {requireAuth: true, role: 'admin'}
+        },
+        {
+            path: '/admin/binnacle',
+            name: 'admin-binnacle',
+            component: AdminBinnacle,
+            meta: {requireAuth: true, role: 'admin'}
+        },
+        {
+            path: '/admin/seed-bookings',
+            name: 'admin-seed-bookings',
+            component: AdminSeedBookings,
             meta: {requireAuth: true, role: 'admin'}
         },
         {

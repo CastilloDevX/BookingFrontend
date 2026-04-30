@@ -35,6 +35,10 @@ const isActiveLink = (routePath) => {
                 'hover:rounded-xl px-4 py-2 rounded-xl']" to="/admin/history?page=1">Historial</RouterLink>
                 <RouterLink :class="[isActiveLink('/admin/register') ? 'bg-gray-300 font-semibold' : 'hover:bg-gray-300',
                 'hover:rounded-xl px-4 py-2 rounded-xl']" to="/admin/register">Registrar</RouterLink>
+            <RouterLink :class="[isActiveLink('/admin/binnacle') ? 'bg-gray-300 font-semibold' : 'hover:bg-gray-300',
+                'hover:rounded-xl px-4 py-2 rounded-xl']" to="/admin/binnacle?page=1">Bitácora</RouterLink>
+            <RouterLink :class="[isActiveLink('/admin/seed-bookings') ? 'bg-gray-300 font-semibold' : 'hover:bg-gray-300',
+                'hover:rounded-xl px-4 py-2 rounded-xl']" to="/admin/seed-bookings">Seed</RouterLink>
         </div>
         <div class="p-4">
             <Button
