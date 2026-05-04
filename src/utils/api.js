@@ -2,7 +2,7 @@ import { useAuthStore } from "../stores/auth"
 
 // This is used to abstract fetch in one single place
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE
+const API_BASE_URL = import.meta.env.VITE_API_BASE || '/api'
 
 async function fetchData(url, method = 'GET', body = {}) {
     const auth = useAuthStore()
